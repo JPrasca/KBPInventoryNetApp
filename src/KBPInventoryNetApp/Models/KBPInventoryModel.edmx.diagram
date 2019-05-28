@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="7d0423ea16ee4c3892c019afa878bfcb" Name="Diagram1">
+        <EntityTypeShape EntityType="KBPInventoryModel.Catalog" Width="1.5" PointX="0.75" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.Company" Width="1.5" PointX="3" PointY="6.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.File" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.Permit" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.Product" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.ProductsByCompany" Width="1.5" PointX="5.25" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.Purchase" Width="1.5" PointX="8.25" PointY="6.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.Sale" Width="1.5" PointX="7.5" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.Tax" Width="1.5" PointX="10.5" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="KBPInventoryModel.User" Width="1.5" PointX="5.25" PointY="13.625" IsExpanded="true" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Companies_Catalogs" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Companies_Catalogs1" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Permits_Catalogs" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_ProductsByCompany_Companies" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Purchases_Companies" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Users_Companies" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Files_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_ProductsByCompany_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Purchases_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Sales_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Taxes_Purchases" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Sales_Users" ManuallyRouted="false" />
+        <AssociationConnector Association="KBPInventoryModel.FK_Taxes_Sales" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
