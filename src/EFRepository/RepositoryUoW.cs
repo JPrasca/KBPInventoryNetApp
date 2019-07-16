@@ -9,21 +9,25 @@ using System.Threading.Tasks;
 
 namespace EFRepository
 {
+    //implementando las interfaces y el repositorio
     public class RepositoryUoW : Repository, IRepository, IUnitOfWork, IDisposable
     {
         public RepositoryUoW(DbContext context, bool autoDetectChangesEnabled = false, bool proxiCreationEnabled = false):
             base(context, autoDetectChangesEnabled, proxiCreationEnabled)
         {
         }
+        
+        //guardar cambios
         public int Save()
         {
             int Result = 0;
             try
-            {
+            {   //guarda
                 Result = Context.SaveChanges();
             }
             catch (DbEntityValidationException dbEx)
             {
+                //captura error
                 string strError = "";
                 foreach (var validationErrors in dbEx.EntityValidationErrors)
                 {
@@ -38,6 +42,7 @@ namespace EFRepository
             return Result;
         }
 
+        //guardar cambios
         protected override int TrySaveChanges()
         {
             return 0;
