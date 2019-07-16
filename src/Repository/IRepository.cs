@@ -8,8 +8,11 @@ using PagedList;
 
 namespace Repository
 {
+    //interfaz para el repositorio
     public interface IRepository: IDisposable
     {
+        /* Métodos para CRUD */
+       
         T Create<T>(T newEntity) where T : class;
         bool Update<T>(T updateEntity) where T : class;
         bool Delete<T>(T deleteEntity) where T : class;
